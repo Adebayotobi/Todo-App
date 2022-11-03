@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: seagreen;
+}
+
+.app-wrapper{
+  background-color: #12343b;
+  width: 500px;
+  min-height: 600px;
+  padding: 10px;
+  box-shadow: 3px 6px 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+ 
+}
+.task h1{
+  color: white;
+  text-align: center;
+  margin: 30px 0;
+}
+.task-input{
+  width: 260px;
+  color: white;
+  background-color: black;
+  /* border: 1px solid orange; */
+  border-radius: 10px;
+  font-size: 20px;
+  margin-right: 25px;
+  padding: 15px;
+  outline: none;
+}
+
+.button-add{
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: orange;
+  cursor: pointer;
+  border: none;
+}
+
+.list-item{
+  display: flex;
+  margin: 20px 0;
+  padding: 10px;
+  min-height: 30px;
+  border: 1px solid;
+}
+
+.complete{
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: orange;
+  opacity: 0.0;
+}
+.task-button {
+  cursor: pointer;
+  font-size: 25px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+.button-complete{
+  color: rgb(46, 129, 129);
+  margin-right: 5px;
+}
+
+.button-edit{
+  color: orange;
+  margin-right: 5px;
+}
+
+.button-delete{
+  color: red;
+}
+
+.list{
+  width: 320px;
+  background-color: #12343b;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus
+button:focus{
+  outline: none;
+}
+
+.list-style{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin-top: 10px;
+}
+.task-me{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media  screen and (min-width: 320px) and (max-width: 896px){
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .app-wrapper{
+    width: 90%;
+  }
+  
+  .task-me{
+    display: flex;
+    flex-direction: column;
+  }
+  .button-add{
+    margin-top: 20px;
+  }
+  .button-me{
+    display: flex;
+  }
+}
